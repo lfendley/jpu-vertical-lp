@@ -1,0 +1,603 @@
+/*
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 2 version
+*/
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --nebula: #e1aefe;
+  --green: #40ff82;
+  --white: #fff;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-size: 1.2rem;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  padding: 0.5em 1em;
+  background-color: var(--nebula);
+  z-index: 99;
+}
+
+header img {
+  width: 7rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.m-1 {
+  margin: 1em 0;
+  z-index: 3;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.p-1 {
+  padding: 1em;
+}
+
+.txt-sm {
+  font-size: .75em;
+}
+
+#tsparticles canvas {
+  background-color: transparent !important;
+}
+
+.nebula {
+  color: var(--nebula);
+}
+.green {
+  color: var(--green);
+}
+
+.cta {
+  border-radius: 3px;
+  padding: 0.75em;
+  margin: 0 auto;
+  background-color: #40ff82;
+  color: #000f35;
+  margin: 1em auto;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  color: var(--white);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background-image: url("/app/assets/bg/bg-full.jpg");
+  background-position: bottom;
+  background-size: contain;
+}
+
+header img {
+  width: 7rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+#tsparticles canvas {
+  background-color: transparent !important;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  padding: 1.5em;
+  overflow: hidden;
+  z-index: 10;
+}
+
+ul.nav-steps {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+  
+ul.nav-steps li {
+  color: #fff;
+  vertical-align: middle;
+  border: 2px solid #40ff82;
+  border-radius: 50%;
+  padding: 0.75rem;
+  margin: 0 .35rem;
+  background-color: #11132a;
+}
+ul.nav-steps li:has(a.active) {
+  background-color: #40ff82;
+}
+
+ul.nav-steps li a {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+  
+hr {
+  rotate: 90deg;
+  border-color: #e1e1e1;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+.gamesGrid img {
+  width: clamp(300px, 100%, 800px);
+  opacity: 0;
+  animation: slideInLeft 1s 1s forwards linear;
+}
+
+.jackpot-flex {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.jackpot-flex img {
+  max-width: 150px;
+  margin-bottom: 1em;
+}
+
+.jpt-txt {
+  border: 1px solid white;
+  line-height: .5em;
+  padding: 0 0 0.5em 0;
+  border-radius: 5px;
+  background-color: #181b45;
+}
+
+.jpt-txt span {
+  font-size: .65rem;
+  color: var(--nebula);
+  top: -8px;
+  position: relative;
+  padding: 0 6px;
+  background-color: #181b45;
+}
+.jpt-txt p {
+  font-weight: 600;
+}
+
+.chevron {
+  margin-top: 5em;
+}
+
+.scroll-down img {
+  margin-top: 2em;
+  rotate: 90deg;
+  position: absolute;
+  right: 1em;
+  z-index: 4;
+}
+
+.scroll-down img.first {
+  position: relative;
+  right: 0;
+}
+
+.scroll-up img {
+    position: relative;
+    rotate: -90deg;
+    bottom: -2em;
+}
+
+.offer {
+  width: 90vw;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: initial;
+  -webkit-animation: pulse 1s infinite linear;
+          animation: pulse 1s infinite linear;
+}
+
+.offer-heading {
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.offer-copy {
+  position: relative;
+  font-size: 1.9rem;
+  margin: 0.5em 0;
+  z-index: 3;
+}
+
+.planet {
+  position: absolute;
+  z-index: 2;
+}
+
+.planet-one {
+  left: -4em;
+  bottom: -3em;
+  background: url("app/assets/Planets/Venus.png") no-repeat;
+  background-size: contain;
+  width: 250px;
+  height: 250px;
+  -webkit-animation: rotateClockwise 120s infinite forwards linear;
+          animation: rotateClockwise 120s infinite forwards linear;
+}
+
+.planet-two {
+  left: -3em;
+  background: url("app/assets/Planets/Earth.png") no-repeat;
+  background-size: contain;
+  width: 250px;
+  height: 250px;
+  -webkit-animation: rotateAntiClockwise 120s infinite forwards linear;
+          animation: rotateAntiClockwise 120s infinite forwards linear;
+}
+
+.planet-three {
+  margin-top: 20m;
+  background: url("app/assets/Planets/Purple.png") no-repeat;
+  background-size: contain;
+  width: 250px;
+  height: 250px;
+  -webkit-animation: rotateAntiClockwise 120s infinite forwards linear;
+          animation: rotateAntiClockwise 120s infinite forwards linear;
+}
+
+.planet-four {
+  margin-top: 0em;
+  background: url("app/assets/Planets/Mars.png") no-repeat;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+  -webkit-animation: rotateClockwise 120s infinite forwards linear;
+          animation: rotateClockwise 120s infinite forwards linear;
+}
+
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+  padding:  1em;
+  -webkit-animation: bgColor 1s .5s forwards linear;
+          animation: bgColor 1s .5s forwards linear;
+}
+
+.steps div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+}
+
+.step-copy {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.step-copy a {
+  text-decoration: none;
+  color: #fff;
+}
+.step-copy p:first-child {
+  font-weight: 600;
+}
+
+span.step {
+  margin: 0 1em;
+  width: 3em;
+  height: 3em;
+  background-color: #40ff82;
+  color: #131835;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.steps {
+  text-align: left;
+}
+
+.steps div:nth-of-type(1) {
+  -webkit-animation: slideInLeft 1s .5s forwards linear;
+          animation: slideInLeft 1s .5s forwards linear;
+}
+.steps div:nth-of-type(2) {
+  -webkit-animation: slideInLeft 1s 1s forwards linear;
+          animation: slideInLeft 1s 1s forwards linear;
+}
+.steps div:nth-of-type(3) {
+  -webkit-animation: slideInLeft 1s 1.5s forwards linear;
+          animation: slideInLeft 1s 1.5s forwards linear;
+}
+
+.promos img {
+  width: 100%;
+  margin: 0.25em 0;
+  border: 2px solid white;
+}
+
+/***************************************
+  MEDIA QUERIES
+***************************************/
+
+@media screen and (min-width: 768px) {
+  .steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 2em;
+    padding: 1em;
+    -webkit-animation: bgColor 1s 1s forwards linear;
+            animation: bgColor 1s 1s forwards linear;
+    max-width: 900px;
+    margin: 2em auto;
+    text-align: left;
+  }
+  .planet-one {
+    left: -5em;
+    bottom: -10em;
+    width: 500px;
+    height: 500px;
+  }
+  .planet-two {
+    left: -5em;
+    width: 500px;
+    height: 500px;
+  }
+  .planet-three {
+    width: 500px;
+    height: 500px;
+  }
+  .scroll-down img {
+    margin-top: 2em;
+  }
+  .wrapper {
+    background-size: cover;
+  }
+  .cta {
+    padding: 1em;
+    margin: 0 auto;
+    margin: 1em auto;
+    font-size: 1em;
+  }
+  .promos {
+    display: flex;
+    justify-content: center;
+  }
+  .promos img {
+    width: 50%;
+    margin:  0 0.25em;
+  }
+  .offer-copy {
+    font-size: 2.5rem;
+  }
+  .jackpot-flex img {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 1919px) {
+  .offer-copy {
+    font-size: 5rem;
+  }
+  header img {
+    width: 10rem;
+  }
+  .steps div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* animation: slideInLeft; */
+    opacity: 0;
+  }
+  span.step {
+    margin: 0 1em;
+    width: 3em;
+    height: 3em;
+    background-color: #40ff82;
+    border-radius: 5px;
+    padding: 1em;
+  }
+  .planet-one {
+    width: 500px;
+    height: 500px;
+  }
+  .scroll-down img {
+    margin-top: 2em;
+  }
+}
+
+/***************************************
+  ANIMATIONS
+***************************************/
+@-webkit-keyframes rotateClockwise {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateClockwise {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotateAntiClockwise {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateAntiClockwise {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(5em);
+            transform: translateX(5em);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(5em);
+            transform: translateX(5em);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes bgColor {
+  0% {
+    opacity: 0;
+    background-color: rgba(100, 100, 100, .5);
+  }
+  100% {
+    opacity: 1;
+    background-color: rgba(100, 100, 100, .5);
+  }
+}
+
+@keyframes bgColor {
+  0% {
+    opacity: 0;
+    background-color: rgba(100, 100, 100, .5);
+  }
+  100% {
+    opacity: 1;
+    background-color: rgba(100, 100, 100, .5);
+  }
+}
