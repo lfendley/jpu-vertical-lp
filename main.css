@@ -480,6 +480,9 @@ span.step {
   .scroll-down img {
     margin-top: 2em;
   }
+  .scroll-down img.slide4 {
+    margin-top: 0;
+  }
 }
 
 /***************************************
