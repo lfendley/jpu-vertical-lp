@@ -209,6 +209,7 @@ hr {
 }
 .jpt-txt p {
   font-weight: 600;
+  padding: 0.25em 0;
 }
 
 .chevron {
@@ -410,6 +411,10 @@ span.step {
     height: 500px;
   }
   .planet-three {
+    width: 500px;
+    height: 500px;
+  }
+  .planet-four {
     width: 500px;
     height: 500px;
   }
