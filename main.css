@@ -173,7 +173,7 @@ hr {
 }
 
 .gamesGrid img {
-  width: clamp(300px, 100%, 800px);
+  width: clamp(300px, 100%, 600px);
   opacity: 0;
   animation: slideInLeft 1s 1s forwards linear;
 }
