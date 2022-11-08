@@ -230,6 +230,7 @@ hr {
 
 .jackpot-flex img {
   max-width: 150px;
+  height: auto;
   margin-bottom: 1em;
 }
 
@@ -500,7 +501,6 @@ span.step {
   }
   .jackpot-flex img {
     max-width: 300px;
-    height: auto;
   }
   span.step {
     margin: 0 1em;
