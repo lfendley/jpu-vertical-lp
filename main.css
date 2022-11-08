@@ -109,6 +109,7 @@ img.brand {
   background-image: url("/app/assets/bg/bg-full.jpg");
   background-position: bottom;
   background-size: contain;
+  overflow-x: hidden;
 }
 
 header img {
