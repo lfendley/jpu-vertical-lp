@@ -184,6 +184,7 @@ hr {
 }
 
 .slide {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,7 +202,6 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  overflow-x: hidden;
 }
 
 .gamesGrid img {
