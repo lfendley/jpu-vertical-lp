@@ -15,18 +15,42 @@ const app = {
       });
     };
 
+    const gamesSlideIn = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.55) {
+          document.querySelector(".gamesGrid img").classList.add("slideInleft");
+        }
+      });
+    };
+
+    const stepsSlideIn = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.1) {
+          document.querySelector(".steps").classList.add("animate");
+        }
+      });
+    };
+
     // init the observer
     const options = {
       threshold: 0.55,
     };
 
     const observer = new IntersectionObserver(changeNav, options);
+    const observer2 = new IntersectionObserver(gamesSlideIn, options);
+    const observer3 = new IntersectionObserver(stepsSlideIn, options);
 
     // target the elements to be observed
     const sections = document.querySelectorAll("section");
     sections.forEach((section) => {
       observer.observe(section);
     });
+
+    const gamesGridImg = document.querySelector("#slide-three");
+    observer2.observe(gamesGridImg);
+
+    const steps = document.querySelector(".steps");
+    observer3.observe(steps);
   },
 };
 

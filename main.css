@@ -207,8 +207,10 @@ hr {
 .gamesGrid img {
   width: clamp(300px, 100%, 600px);
   opacity: 0;
-  -webkit-animation: slideInLeft 1s 1s forwards linear;
-          animation: slideInLeft 1s 1s forwards linear;
+}
+.gamesGrid img.slideInleft {
+  -webkit-animation: slideInLeft 1s forwards linear;
+          animation: slideInLeft 1s forwards linear;
 }
 
 .jackpot-flex {
@@ -304,7 +306,7 @@ hr {
 .planet-one {
   left: -4em;
   bottom: -3em;
-  background: url("app/assets/Planets/Venus.png") no-repeat;
+  background: url("app/assets/Planets/Venus.webp") no-repeat;
   background-size: contain;
   width: 250px;
   height: 250px;
@@ -314,7 +316,7 @@ hr {
 
 .planet-two {
   left: -3em;
-  background: url("app/assets/Planets/Earth.png") no-repeat;
+  background: url("app/assets/Planets/Earth.webp") no-repeat;
   background-size: contain;
   width: 250px;
   height: 250px;
@@ -324,7 +326,7 @@ hr {
 
 .planet-three {
   margin-top: 20m;
-  background: url("app/assets/Planets/Purple.png") no-repeat;
+  background: url("app/assets/Planets/Purple.webp") no-repeat;
   background-size: contain;
   width: 250px;
   height: 250px;
@@ -334,7 +336,7 @@ hr {
 
 .planet-four {
   margin-top: 0em;
-  background: url("app/assets/Planets/Mars.png") no-repeat;
+  background: url("app/assets/Planets/Mars.webp") no-repeat;
   background-size: contain;
   width: 300px;
   height: 300px;
@@ -410,15 +412,15 @@ span.step {
   text-align: left;
 }
 
-.steps div:nth-of-type(1) {
+.steps.animate div:nth-of-type(1) {
   -webkit-animation: slideInLeft 1s .5s forwards linear;
           animation: slideInLeft 1s .5s forwards linear;
 }
-.steps div:nth-of-type(2) {
+.steps.animate div:nth-of-type(2) {
   -webkit-animation: slideInLeft 1s 1s forwards linear;
           animation: slideInLeft 1s 1s forwards linear;
 }
-.steps div:nth-of-type(3) {
+.steps.animate div:nth-of-type(3) {
   -webkit-animation: slideInLeft 1s 1.5s forwards linear;
           animation: slideInLeft 1s 1.5s forwards linear;
 }
