@@ -202,6 +202,7 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  overflow-y: visible;
 }
 
 .gamesGrid img {
@@ -283,8 +284,8 @@ hr {
   max-width: 600px;
   margin: 0 auto;
   line-height: initial;
-  -webkit-animation: pulse 1s infinite linear;
-          animation: pulse 1s infinite linear;
+  -webkit-animation: pulse 2s infinite ease-in-out;
+          animation: pulse 2s infinite linear;
 }
 
 .offer-heading {
