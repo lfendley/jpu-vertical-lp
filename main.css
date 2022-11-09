@@ -205,6 +205,7 @@ hr {
   background-repeat: no-repeat;
   background-position: center;
   overflow-y: visible;
+  scroll-margin-top: 50px;
 }
 
 .gamesGrid img {
