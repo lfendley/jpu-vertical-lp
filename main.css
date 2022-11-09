@@ -209,6 +209,7 @@ hr {
 
 .gamesGrid img {
   width: clamp(300px, 100%, 600px);
+  height: auto;
   opacity: 0;
 }
 .gamesGrid img.slideInleft {
