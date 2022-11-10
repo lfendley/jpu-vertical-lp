@@ -71,6 +71,11 @@ h6 {
   font-size: .75em;
 }
 
+.txt-lg {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
 #tsparticles canvas {
   background-color: transparent !important;
 }
