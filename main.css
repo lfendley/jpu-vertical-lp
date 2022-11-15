@@ -224,6 +224,8 @@ hr {
 }
 
 .jackpot-flex {
+  position: relative;
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,7 +308,11 @@ hr {
   position: relative;
   font-size: 1.9rem;
   margin: 0.5em 0;
-  z-index: 3;
+}
+
+.offer-copy,
+.offer-copy + p {
+  z-index: 5;
 }
 
 .planet {
@@ -315,47 +321,51 @@ hr {
 }
 
 .planet-one {
-  left: -4em;
-  bottom: -3em;
-  background: url("app/assets/Planets/Venus.webp") no-repeat;
+  right: -19em;
+  bottom: -13em;
+  background: url("app/assets/Planets/Earth.webp") no-repeat;
   background-size: contain;
-  width: 250px;
-  height: 250px;
+  width: 500px;
+  height: 500px;
   -webkit-animation: rotateClockwise 120s infinite forwards linear;
           animation: rotateClockwise 120s infinite forwards linear;
 }
 
 .planet-two {
-  left: -3em;
-  background: url("app/assets/Planets/Earth.webp") no-repeat;
+  left: -12em;
+  bottom: -5em;
+  background: url("app/assets/Planets/Venus.webp") no-repeat;
   background-size: contain;
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   -webkit-animation: rotateAntiClockwise 120s infinite forwards linear;
           animation: rotateAntiClockwise 120s infinite forwards linear;
 }
 
 .planet-three {
-  margin-top: 20m;
+  right: -5em;
   background: url("app/assets/Planets/Purple.webp") no-repeat;
   background-size: contain;
-  width: 250px;
-  height: 250px;
+  width: 275px;
+  height: 275px;
   -webkit-animation: rotateAntiClockwise 120s infinite forwards linear;
           animation: rotateAntiClockwise 120s infinite forwards linear;
 }
 
 .planet-four {
-  margin-top: 0em;
+  left: -7em;
+  top: 16em;
   background: url("app/assets/Planets/Mars.webp") no-repeat;
   background-size: contain;
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
   -webkit-animation: rotateClockwise 120s infinite forwards linear;
           animation: rotateClockwise 120s infinite forwards linear;
 }
 
 .steps {
+  position: relative;
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,6 +377,10 @@ hr {
   padding:  1em;
   -webkit-animation: bgColor 1s .5s forwards linear;
           animation: bgColor 1s .5s forwards linear;
+}
+
+.steps + a {
+  display: none;
 }
 
 .steps div {
@@ -463,24 +477,28 @@ span.step {
     margin: 2em auto;
     text-align: left;
   }
+  .steps + a {
+    display: block;
+  }
   .planet-one {
-    left: -5em;
-    bottom: -10em;
-    width: 500px;
-    height: 500px;
+    width: 750px;
+    height: 750px;
   }
   .planet-two {
-    left: -5em;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
+    bottom: -12em;
+    left: -16em;
   }
   .planet-three {
     width: 500px;
     height: 500px;
   }
   .planet-four {
-    width: 500px;
-    height: 500px;
+    width: 1000px;
+    height: 1000px;
+    bottom: -17em;
+    top: initial;
   }
   .scroll-down img {
     margin-top: 2em;
@@ -541,8 +559,24 @@ span.step {
     opacity: 0;
   }
   .planet-one {
-    width: 500px;
-    height: 500px;
+    width: 900px;
+    height: 900px;
+  }
+  .planet-two {
+    top: -25em;
+    width: 800px;
+    height: 800px;
+  }
+  .planet-three {
+    top: -10em;
+    width: 900px;
+    height: 900px;
+  }
+  .planet-four {
+    left: calc(50% - 18%);
+    bottom: -30em;
+    width: 950px;
+    height: 950px;
   }
   .scroll-down img {
     margin-top: 2em;

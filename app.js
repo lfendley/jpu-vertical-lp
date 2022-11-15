@@ -1,6 +1,6 @@
 const app = {
   init: () => {
-    // simple function to use for callback in the intersection observer
+    // Change nav links as active based on which slide is in viewport (0.55 threshold)
     const changeNav = (entries, observer) => {
       entries.forEach((entry) => {
         // verify the element is intersecting
