@@ -5,6 +5,11 @@
 * Browsers: last 4 version
 */
 
+@font-face {
+  font-family: Termina;
+  src: url('app/assets/Termina\ W05\ Bold.ttf');
+}
+
 * {
   scroll-behavior: smooth;
   margin: 0;
@@ -314,6 +319,11 @@ hr {
 .offer-copy {
   font-size: 1.9rem;
   margin: 0.5em 0;
+}
+
+.offer-heading,
+.offer-copy {
+  font-family: Termina;
 }
 
 .offer-copy,
