@@ -18,7 +18,7 @@ const app = {
     const gamesSlideIn = (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting && entry.intersectionRatio >= 0.55) {
-          document.querySelector(".gamesGrid img").classList.add("slideInleft");
+          document.querySelector(".gamesGrid").classList.add("slideInleft");
         }
       });
     };

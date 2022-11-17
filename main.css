@@ -213,6 +213,13 @@ hr {
   scroll-margin-top: 25px;
 }
 
+.gamesGrid {
+  background-image: url("/app/assets/tiles-mobile.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+
 .gamesGrid img {
   width: clamp(300px, 100%, 600px);
   height: auto;
@@ -537,6 +544,12 @@ span.step {
     height: 3em;
     min-width: 3em;
     max-width: 3em;
+  }
+  .gamesGrid {
+    background-image: url("/app/assets/tiles.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
   }
 }
 
