@@ -8,6 +8,7 @@
 @font-face {
   font-family: Termina;
   src: url('app/assets/Termina_W05_Bold.ttf');
+  font-display: swap;
 }
 
 * {
@@ -312,12 +313,13 @@ hr {
 }
 
 .offer-heading {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--white);
 }
 
 .offer-copy {
   font-size: 1.9rem;
+  line-height: 1.9rem;
   margin: 0.5em 0;
 }
 
@@ -565,7 +567,8 @@ span.step {
 
 @media screen and (min-width: 1919px) {
   .offer-copy {
-    font-size: 5rem;
+    font-size: 4rem;
+    line-height: 4rem;
   }
   header img {
     width: 10rem;
